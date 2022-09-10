@@ -4,7 +4,7 @@ const TopSection = () => {
   return (
     <div className="flex flex-col text-center py-8 mx-10 space-x-0 md:flex-row md:space-x-96">
       <div className="search-box">
-        <button className="flex-items__center  border rounded-full pr-4 md:pr-0 py-2 w-[20rem]">
+        <button className="flex-items__center  border rounded-full px-6 md:px-0 py-2 w-[18rem]">
           <span className="basis-10/12 text-left pl-2 text-gray-300 hover:cursor-not-allowed">
             search...
           </span>
