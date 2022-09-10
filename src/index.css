@@ -1,9 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
 
-*{ 
+* {
   margin: 0;
-  padding:0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* style for dotted border patition on top nav */
+.dot-line {
+  @apply border-dotted border-l-4 border-gray-500 h-4 w-6;
 }
