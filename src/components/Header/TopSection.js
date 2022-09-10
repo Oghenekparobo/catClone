@@ -3,7 +3,7 @@ import CartBadge from "../Cart/CartBadge";
 const TopSection = () => {
   return (
     <div className="flex flex-col text-center py-8 mx-10 space-x-0 md:flex-row md:space-x-96">
-      <div className="search-box">
+      <div className="search-box mx-4">
         <button className="flex-items__center  border rounded-full py-2 w-[20rem]">
           <span className="basis-10/12 text-left pl-2 text-gray-300 hover:cursor-not-allowed">
             search...
