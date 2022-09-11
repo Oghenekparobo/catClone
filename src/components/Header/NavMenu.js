@@ -1,6 +1,8 @@
+import { FaFacebook, FaPinterest } from "react-icons/fa";
+import { AiOutlineGooglePlus, AiOutlineTwitter } from "react-icons/ai";
 const NavMenu = () => {
   return (
-    <nav className="flex bg-lime-500 justify-between text-white py-4">
+    <nav className="flex-items__center bg-lime-500 justify-between text-white py-4 px-10">
       <div className="men">
         <ul className="hidden space-x-6 md:flex">
           <li>
@@ -24,27 +26,19 @@ const NavMenu = () => {
         </ul>
       </div>
 
-      <div className="menu">
-        <ul className="flex">
-          <li>
-            <button>home</button>
-          </li>
-          <li>
-            <button>about us</button>
-          </li>
-          <li>
-            <button>store</button>
-          </li>
-          <li>
-            <button>news</button>
-          </li>
-          <li>
-            <button>centers</button>
-          </li>
-          <li>
-            <button>contact us</button>
-          </li>
-        </ul>
+      <div className="socials flex space-x-6">
+        <div class="rounded-full border border-white text-2xl p-2">
+          <FaFacebook />
+        </div>
+        <div class="rounded-full border border-white text-2xl p-2">
+          <AiOutlineTwitter />
+        </div>
+        <div class="rounded-full border border-white text-2xl p-2">
+          <AiOutlineGooglePlus />
+        </div>
+        <div class="rounded-full border border-white text-2xl p-2">
+          <FaPinterest />
+        </div>
       </div>
     </nav>
   );
