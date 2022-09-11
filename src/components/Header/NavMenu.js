@@ -15,35 +15,49 @@ const NavMenu = () => {
         <div className="menu">
           {/* mobile hamburger starts here */}
           {/* {open menu} */}
-          {openMobileMenu &&  <div
-            className="mobile-hamburger block md:hidden"
-            onClick={closeMobileMenu}
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-</svg>
-
-          </div> }
-          {/* {close menu} */}
-          {!openMobileMenu &&  <div
-            className="mobile-hamburger block md:hidden"
-            onClick={showMobileMenu}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
+          {openMobileMenu && (
+            <div
+              className="mobile-hamburger block md:hidden"
+              onClick={closeMobileMenu}
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
-              />
-            </svg>
-          </div> }
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </div>
+          )}
+          {/* {close menu} */}
+          {!openMobileMenu && (
+            <div
+              className="mobile-hamburger block md:hidden"
+              onClick={showMobileMenu}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+                />
+              </svg>
+            </div>
+          )}
 
           {/* mobile hamburger ends here */}
 
@@ -87,25 +101,25 @@ const NavMenu = () => {
 
       {/* nav mobile menu */}
       {openMobileMenu && (
-        <div className="nav-menu__mobile bg-lime-500 border-t-2 border-white py-4 ">
+        <div className="nav-menu__mobile bg-lime-500 border-t-2 border-white py-4  ">
           <ul className="flex flex-col md:hidden text-left text-white divide-y ">
             <li>
-              <button className="uppercase p-2">home</button>
+              <button className="uppercase py-4 px-10">home</button>
             </li>
             <li>
-              <button className="uppercase p-2">about us</button>
+              <button className="uppercase py-4 px-10">about us</button>
             </li>
             <li>
-              <button className="uppercase p-2">store</button>
+              <button className="uppercase py-4 px-10">store</button>
             </li>
             <li>
-              <button className="uppercase p-2">news</button>
+              <button className="uppercase py-4 px-10">news</button>
             </li>
             <li>
-              <button className="uppercase">centers</button>
+              <button className="uppercase py-4 px-10">centers</button>
             </li>
             <li>
-              <button className="uppercase">contact us</button>
+              <button className="uppercase py-4 px-10">contact us</button>
             </li>
           </ul>
         </div>
