@@ -18,12 +18,16 @@
 }
 
 
-.flex-items__center{
+.flex-items__center {
   @apply flex items-center
 }
 
-.md-flex-items__center{
+.md-flex-items__center {
   @apply md:flex md:items-center
+}
+
+.social-icons {
+  @apply rounded-full border border-white text-sm  p-2 cursor-pointer md:text-2xl
 }
 
 /* utilties styles end here */
