@@ -1,4 +1,5 @@
 import NavMenu from "./NavMenu";
+import Slider from "./Slider";
 import TopNav from "./TopNav";
 import TopSection from "./TopSection";
 
@@ -9,6 +10,7 @@ const Top = () => {
       <TopNav />
       <TopSection />
       <NavMenu/>
+      <Slider/>
     </div>
   );
 };
