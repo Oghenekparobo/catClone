@@ -51,7 +51,7 @@ const Products = () => {
         <div className="flex justify-center py-4">
           <img src={grass} alt="grass" width="35" />
         </div>
-        <div className="space-x-6 pb-4 flex flex-col md:inline">
+        <div className="space-y-4 pb-4 flex flex-col md:inline  md:space-x-6 md:space-y-0">
           <button className="bg-lime-500 py-2 px-6 text-white opacity-75">
             All Products
           </button>
@@ -69,7 +69,7 @@ const Products = () => {
           </button>
         </div>
       </div>
-      <div className=" relative grid  grid-cols-1 md:grid-cols-4 mx-8">
+      <div className=" relative grid grid-cols-1 space-y-4 pt-4 md:space-y-0 text-center md:grid-cols-4 mx-8">
         {products.map((product) => (
           <div
             className="prod-card border-2 border-opacity-25 p-4 text-center w-5/6 cursor-pointer relative"
