@@ -69,7 +69,7 @@ const Products = () => {
           </button>
         </div>
       </div>
-      <div className=" relative mx-10 grid grid-cols-1 space-y-4 pt-4 md:space-y-0 text-center md:grid-cols-4">
+      <div className=" relative grid grid-cols-1 space-y-4 pt-4 ml-4 md:ml-0 md:space-y-0 text-center md:grid-cols-4">
         {products.map((product) => (
           <div
             className="prod-card border-2 border-opacity-25 p-4 text-center w-5/6 cursor-pointer relative"
