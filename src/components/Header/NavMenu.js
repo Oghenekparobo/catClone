@@ -84,16 +84,16 @@ const NavMenu = () => {
         </div>
 
         <div className="socials flex space-x-6">
-          <div class="social-icons">
+          <div className="social-icons">
             <FaFacebook />
           </div>
-          <div class="social-icons">
+          <div className="social-icons">
             <AiOutlineTwitter />
           </div>
-          <div class="social-icons">
+          <div className="social-icons">
             <AiOutlineGooglePlus />
           </div>
-          <div class="social-icons">
+          <div className="social-icons">
             <FaPinterest />
           </div>
         </div>

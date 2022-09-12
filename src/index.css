@@ -30,4 +30,8 @@
   @apply rounded-full border border-white text-sm  p-2 cursor-pointer md:text-2xl
 }
 
+.prod-icons__rounded {
+  @apply rounded-full border-2 border-lime-500 text-sm  text-lime-500 p-2 cursor-pointer md:text-2xl
+}
+
 /* utilties styles end here */
