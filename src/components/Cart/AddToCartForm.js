@@ -5,7 +5,7 @@ const AddToCartForm = () => {
         <AddToCart>
             <div className="add-to-cart__form py-2">
                 <h1 className="font-bold tracking-widest text-black uppercase py-2 px-4 text-[1rem] border-b-2 border-opacity-75 shadow-sm">Add To Cart</h1>
-                <form action="" className="ml-18 md:ml-20">
+                <form action="" className="ml-10 md:ml-20 px-4 md:px-0">
                 <div className="add-to-cart__quantity my-2">
                     <input type="number" className="outline-none border border-opacity-25 px-6 py-1" step="0" min="1" max="5" placeholder="1" required/>
                 </div>
