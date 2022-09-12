@@ -45,7 +45,7 @@ const Products = () => {
   const [bgOverlay, setBgOverlay] = useState(false);
 
   return (
-    <div className="text-center py-12">
+    <div className="text-center py-12 px-6 md:px-0">
       <div className=" py-4">
         <h1 className="font-bold text-2xl">FEATURED PRODUCTS</h1>
         <div className="flex justify-center py-4">
@@ -69,7 +69,7 @@ const Products = () => {
           </button>
         </div>
       </div>
-      <div className=" relative grid grid-cols-1 space-y-4 px-4 md:px-0 md:space-y-0 text-center md:grid-cols-4">
+      <div className=" relative grid grid-cols-1 space-y-4  md:px-0 md:space-y-0 text-center md:grid-cols-4">
         {products.map((product) => (
           <div
             className="prod-card border-2 border-opacity-25 p-4 text-center w-11/12 md:w-5/6 cursor-pointer relative"
