@@ -14,7 +14,7 @@ const AddToCartForm = () => {
                         <option value="vawulence headquaters">vawulence headquaters</option>
                     </select>
                 </div>
-                <div className="add-to-cart__buttons my-2 flex md:flex-col justify-between pr-8">
+                <div className="add-to-cart__buttons my-2 flex flex-col justify-between pr-8 space-y-4 md:space-y-0  md:flex-row ">
                 <button className="bg-lime-500 px-4 py-1 text-white shadow-sm hover:bg-lime-600">add to cart</button>
                     <button className="px-6 py-1 text-sm text-lime-500 border-2 border-lime-500 font-bold hover:bg-lime-500 hover:text-white">View cart and checkout</button>
                 </div>
