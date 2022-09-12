@@ -40,12 +40,12 @@ const products = [
   },
 ];
 
-const Products = () => {
+const Products = (props) => {
 
 
 
   const productItem = products.map((product) => (
-    <Product key={product.id} product={product} />
+    <Product onAddCart={props.onAddCart} onRemove={props.onRemove} key={product.id} product={product} />
   ));
 
   return (
