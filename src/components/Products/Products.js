@@ -41,9 +41,12 @@ const products = [
 ];
 
 const Products = () => {
-  const productItem = products.map((product) =>(
-      <Product key={product.id} product={product} />
-  ))
+
+
+
+  const productItem = products.map((product) => (
+    <Product key={product.id} product={product} />
+  ));
 
   return (
     <div className="text-center py-12 px-6">
@@ -71,7 +74,7 @@ const Products = () => {
         </div>
       </div>
       <div className=" relative pt-4 grid grid-cols-1 space-y-10  md:px-0 md:space-y-0 text-center md:grid-cols-4">
-       {productItem}
+        {productItem}
       </div>
     </div>
   );

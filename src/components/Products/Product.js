@@ -4,7 +4,7 @@ const Product = ({product}) => {
   return (
     <div className="prod-card border-2 border-opacity-25 p-10 text-center  w-11/12 md:w-5/6 cursor-pointer relative">
       {/* show on mouse hover */}
-        <div className="absolute inset-0 bg-gradient-to-r  from-gray-200 to-gray-200 opacity-70 flex justify-center items-start">
+        <div className="absolute inset-0 bg-gradient-to-b  from-slate-100 to-slate-100 bg-blend-darken  opacity-70 flex justify-center items-start">
           <div className="prod-icons absolute pt-14 space-x-2  flex">
             {/* cart to bring out form */}
             <ProductForm/>
