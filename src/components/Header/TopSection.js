@@ -1,6 +1,6 @@
 import logo from "../../assets/logo.png";
 import CartBadge from "../Cart/CartBadge";
-const TopSection = () => {
+const TopSection = (props) => {
   return (
     <div className="flex flex-col text-center py-8 mx-10 space-x-0 md:flex-row md:space-x-96">
       <div className="search-box">
@@ -34,7 +34,7 @@ const TopSection = () => {
           <img src={logo} alt="logo" />
         </div>
         <div className="cart-badge">
-          <CartBadge />
+          <CartBadge onCart={props.onCart} />
         </div>
       </div>
     </div>
