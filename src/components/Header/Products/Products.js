@@ -1,15 +1,18 @@
-import agbado from "../../assets/corn.jpg";
-import cashew from "../../assets/cashew.jpg";
-import kokunut from "../../assets/general.jpg";
-import soya from "../../assets/soya.jpg";
-import grass from "../../assets/grass.png";
+import agbado from "../../../assets/corn.jpg";
+import cashew from "../../../assets/cashew.jpg";
+import kokunut from "../../../assets/general.jpg";
+import soya from "../../../assets/soya.jpg";
+import grass from "../../../assets/grass.png";
 import Product from "./Product";
+import AddToCartForm from "../../Cart/AddToCartForm";
+
 
 const products = [
   {
     id: "1",
     name: "soya beans",
     kg: "2kg",
+    location: "vawulence headquaters",
     description: "35% of organic raisins 55% of oats and 10% of butter",
     img: soya,
     price: "7500",
@@ -18,6 +21,7 @@ const products = [
     id: "2",
     name: "agbado",
     kg: "2kg",
+    location: "vawulence headquaters",
     description: "35% of organic raisins 55% of oats and 10% of butter",
     img: agbado,
     price: "7500",
@@ -25,6 +29,7 @@ const products = [
   {
     id: "3",
     name: "cashew",
+    location: "vawulence headquaters",
     kg: "2kg",
     description: "35% of organic raisins 55% of oats and 10% of butter",
     img: cashew,
@@ -33,6 +38,7 @@ const products = [
   {
     id: "4",
     name: " kokunut",
+    location: "vawulence headquaters",
     kg: "2kg",
     description: "35% of organic raisins 55% of oats and 10% of butter",
     img: kokunut,
@@ -41,15 +47,9 @@ const products = [
 ];
 
 const Products = (props) => {
-
-
-
-  const productItem = products.map((product) => (
-    <Product onAddCart={props.onAddCart} onRemove={props.onRemove} key={product.id} product={product} />
-  ));
-
   return (
     <div className="text-center py-12 px-6">
+      <AddToCartForm />
       <div className=" py-4">
         <h1 className="font-bold text-2xl">FEATURED PRODUCTS</h1>
         <div className="flex justify-center py-4">
@@ -74,7 +74,9 @@ const Products = (props) => {
         </div>
       </div>
       <div className=" relative pt-4 grid grid-cols-1 space-y-10  md:px-0 md:space-y-0 text-center md:grid-cols-4">
-        {productItem}
+        {products.map((product) => (
+          <Product key={product.id} product={product} />
+        ))}
       </div>
     </div>
   );

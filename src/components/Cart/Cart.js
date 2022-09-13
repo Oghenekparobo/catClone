@@ -3,6 +3,7 @@ import CartSummary from "./CartSummary";
 import CartTable from "./CartTable";
 
 const Cart = (props) => {
+  
   return (
     <ViewCart removeCart={props.removeCart}>
       <div className="text-center">
