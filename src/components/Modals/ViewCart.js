@@ -7,7 +7,7 @@ const ViewCart = (props) => {
   const portalElement = document.getElementById("viewCart");
   return (
     <>
-      {ReactDom.createPortal(<Backdrop/>, portalElement)}
+      {ReactDom.createPortal(<Backdrop removeCart={props.removeCart}/>, portalElement)}
       {ReactDom.createPortal(
         <Overlay>{props.children}</Overlay>,
         portalElement

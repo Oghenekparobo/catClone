@@ -1,18 +1,22 @@
+import { useRef } from "react";
 import AddToCart from "../Modals/AddToCart";
 
 const AddToCartForm = (props) => {
+  const quantityRef = useRef();
+  const locationRef = useRef();
+
   const submitHandler = (e) => {
     e.preventDefault();
   };
   return (
-    <AddToCart  onRemoveCart={props.onRemoveCart}>
+    <AddToCart removeCart={props.removeCart}>
       <div className="add-to-cart__form py-2">
         <div className="add-to-cart__text  border-b-2 border-opacity-75 shadow-sm flex justify-between items-center">
           <h1 className="font-bold tracking-widest text-black uppercase py-2 px-4 text-xl">
             Add To Cart
           </h1>
           <svg
-            onClick={props.onRemoveCart}
+            onClick={props.removeCart}
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -31,6 +35,7 @@ const AddToCartForm = (props) => {
         <form className="ml-10 md:ml-20 px-4 md:px-0" onSubmit={submitHandler}>
           <div className="add-to-cart__quantity my-2">
             <input
+              ref={quantityRef}
               type="number"
               className="outline-none border border-opacity-25 px-6 py-1"
               step="0"
@@ -42,6 +47,7 @@ const AddToCartForm = (props) => {
           </div>
           <div className="add-to-cart__location">
             <select
+            ref={locationRef}
               name="location"
               id="location"
               className="outline-none border border-opacity-25 px-4 py-1"

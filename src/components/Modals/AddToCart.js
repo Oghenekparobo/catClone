@@ -7,7 +7,7 @@ const AddToCart = (props) => {
   const portalElement = document.getElementById("addToCart");
   return (
     <>
-      {ReactDom.createPortal(<Backdrop onRemoveCart={props.onRemoveCart} />, portalElement)}
+      {ReactDom.createPortal(<Backdrop removeCart={props.removeCart} />, portalElement)}
       {ReactDom.createPortal(
         <Overlay>{props.children}</Overlay>,
         portalElement

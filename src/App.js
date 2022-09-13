@@ -6,18 +6,18 @@ import Products from "./components/Products/Products";
 
 function App() {
   const [addCart, setAddCart] = useState(false);
-  const [viewCart , setViewCart] = useState(false)
+  const [viewCart, setViewCart] = useState(false);
   const setAddCartHandler = () => [setAddCart(true)];
   const removeAddCartHandler = () => [setAddCart(false)];
-  const showCartHandler = () => [ setViewCart(true)];
+  const showCartHandler = () => [setViewCart(true)];
   const removeCartHandler = () => [setViewCart(false)];
   return (
     <div>
-      {viewCart && <Cart/>}
+      {viewCart && <Cart removeCart={removeCartHandler} />}
       <Top onCart={showCartHandler} />
       <div className="product-section">
-        {addCart && <AddToCartForm onRemoveCart={removeAddCartHandler} />}
-        <Products onAddCart={setAddCartHandler}  />
+        {addCart && <AddToCartForm removeCart={removeAddCartHandler} />}
+        <Products onAddCart={setAddCartHandler} />
       </div>
     </div>
   );
