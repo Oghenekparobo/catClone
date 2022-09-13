@@ -22,7 +22,7 @@ const Cart = () => {
             />
           </svg>
             </div>
-       <div className="cart-table-area p-4 scroll-smooth overflow-auto">
+       <div className="cart-table-area p-4 scroll-smooth overflow-auto md:p-0">
        <table>
         <tr>
           <th>product</th>
