@@ -1,6 +1,6 @@
 const CartTable = () => {
   return (
-    <table>
+    <table className="scroll-smooth overflow-auto">
       <tr>
         <th>product</th>
         <th>price</th>

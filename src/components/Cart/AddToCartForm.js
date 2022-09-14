@@ -7,6 +7,16 @@ const AddToCartForm = (props) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
+    let quantity = quantityRef.current.value;
+    quantity = +quantity;
+    const location = locationRef.current.value;
+
+    const products = {
+      quantity,
+      location,
+    };
+
+    props.addProduct(products);
   };
   return (
     <AddToCart removeCart={props.removeCart}>
@@ -38,16 +48,16 @@ const AddToCartForm = (props) => {
               ref={quantityRef}
               type="number"
               className="outline-none border border-opacity-25 px-6 py-1"
-              step="0"
+              step="1"
               min="1"
-              max="5"
+              max="50"
               placeholder="1"
               required
             />
           </div>
           <div className="add-to-cart__location">
             <select
-            ref={locationRef}
+              ref={locationRef}
               name="location"
               id="location"
               className="outline-none border border-opacity-25 px-4 py-1"

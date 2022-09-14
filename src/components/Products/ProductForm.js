@@ -8,7 +8,7 @@ const ProductForm = (props) => {
         strokeWidth={1.5}
         stroke="currentColor"
         className="w-6 h-6"
-        onClick={props.onAddCart}
+        onClick={props.onAddProduct}
         
       >
         <path

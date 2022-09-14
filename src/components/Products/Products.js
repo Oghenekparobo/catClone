@@ -12,7 +12,7 @@ const products = [
     kg: "2kg",
     description: "35% of organic raisins 55% of oats and 10% of butter",
     img: soya,
-    price: "7500",
+    price: "700",
   },
   {
     id: "2",
@@ -20,7 +20,7 @@ const products = [
     kg: "2kg",
     description: "35% of organic raisins 55% of oats and 10% of butter",
     img: agbado,
-    price: "7500",
+    price: "200",
   },
   {
     id: "3",
@@ -28,7 +28,7 @@ const products = [
     kg: "2kg",
     description: "35% of organic raisins 55% of oats and 10% of butter",
     img: cashew,
-    price: "7500",
+    price: "1580",
   },
   {
     id: "4",
@@ -36,7 +36,7 @@ const products = [
     kg: "2kg",
     description: "35% of organic raisins 55% of oats and 10% of butter",
     img: kokunut,
-    price: "7500",
+    price: "100",
   },
 ];
 
