@@ -1,8 +1,12 @@
+
+
 import ViewCart from "../Modals/ViewCart";
-import CartSummary from "./CartSummary";
+
 import CartTable from "./CartTable";
 
 const Cart = (props) => {
+  
+
   return (
     <ViewCart removeCart={props.removeCart}>
       <div className="text-center">
@@ -26,10 +30,6 @@ const Cart = (props) => {
         </div>
         <div className="p-6">
           <CartTable />
-        </div>
-
-        <div className="sum-table-area w-3/5 p-6">
-          <CartSummary />
         </div>
       </div>
     </ViewCart>

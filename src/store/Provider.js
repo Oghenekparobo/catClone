@@ -9,6 +9,9 @@ const productReducer = (state, action) => {
     // update total orders
     const orders =
       state.totalOrder + action.product.price * action.product.quantity;
+    //  processing to add products
+    // const  updatedProducts = state.products.concat(action.product);
+    // console.log(updatedProducts);
 
     // find the index of an existing product
     const existingProductPosition = state.products.findIndex(
@@ -29,9 +32,9 @@ const productReducer = (state, action) => {
       updatedProducts = [...state.products];
       updatedProducts[existingProductPosition] = updatedProduct;
     } else {
-      updatedProducts = state.products.concat(action.products);
+      updatedProducts = state.products.concat(action.product);
     }
-
+console.log( updatedProducts);
     return { products: updatedProducts, totalOrder: orders };
   }
 
@@ -54,6 +57,7 @@ const Provider = (props) => {
       type: "add",
       product: product,
     });
+   
   };
 
   const removeProduct = (id) => {
