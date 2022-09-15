@@ -71,16 +71,13 @@ const CartTable = (props) => {
         <div className="cart-table-area  md:p-0">
           <table>
             <thead>
-              <tr>
-                <th>cart sub total</th>
-                <th className="opacity-50">{totalOrder}</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
+            <tr>
                 <th>shipping</th>
                 <th className="opacity-50">FREE</th>
               </tr>
+            </thead>
+            <tbody>
+             
               <tr>
                 <th>order total</th>
                 <th className="opacity-50">{totalOrder}</th>
