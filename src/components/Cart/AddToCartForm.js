@@ -20,7 +20,7 @@ const AddToCartForm = (props) => {
   };
   return (
     <AddToCart removeCart={props.removeCart}>
-      <div className="add-to-cart__form py-2">
+      <div className="add-to-cart__form  py-2">
         <div className="add-to-cart__text  border-b-2 border-opacity-75 shadow-sm flex justify-between items-center">
           <h1 className="font-bold tracking-widest text-black uppercase py-2 px-4 text-xl">
             Add To Cart
