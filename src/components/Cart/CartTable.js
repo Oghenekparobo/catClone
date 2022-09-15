@@ -6,8 +6,8 @@ const CartTable = (props) => {
   const totalOrder = `₦${ctx.totalOrder.toFixed(2)}`;
 
   return (
-    <div className="">
-      <table className="scroll-smooth overflow-auto">
+    <div className="scroll-smooth">
+      <table>
         {ctx.products.map((product)=>(
 
 <tbody>
@@ -22,8 +22,8 @@ const CartTable = (props) => {
 
           <tr>
             <td>{product.name}</td>
-            <td>NGN7,500</td>
-            <td>vawulence headquaters</td>
+            <td>{product.price}</td>
+            <td>{product.location}</td>
             <td>
               <button className="text-xl hover:text-lime-500 flex">
                 <span className="border">x1</span>
@@ -67,7 +67,7 @@ const CartTable = (props) => {
         ))}
     
       </table>
-      <div className="sum-table-area w-3/5 p-6">
+      <div className="sum-table-area scroll-smooth w-3/5 p-6">
         <div className="cart-table-area  md:p-0">
           <table>
             <thead>
