@@ -18,7 +18,6 @@ const productReducer = (state, action) => {
       (product) => product.id === action.product.id
     );
 
-    // avoiding duplication of product
     const existingProduct = state.products[existingProductPosition];
 
     let updatedProducts;
@@ -40,7 +39,29 @@ const productReducer = (state, action) => {
 
   // removing product from cart
   if (action.type === "remove") {
-    return { products: [], totalOrder: 0 };
+    // find the index of an existing product
+    const existingProductPosition = state.products.findIndex(
+      (product) => product.id === action.id
+    );
+    const existingProduct = state.products[existingProductPosition];
+    // subtract order from existing orders
+    const orders = state.totalOrder - existingProduct.price;
+
+    let updatedProducts;
+
+    if (existingProduct.quantity === 1) {
+      updatedProducts = state.products.filter(
+        (product) => product.id !== action.id
+      );
+    } else {
+      const updatedProduct = {
+        ...existingProduct,
+        quantity: existingProduct.quantity - 1,
+      };
+      updatedProducts = [...state.products];
+      updatedProducts[existingProductPosition] = updatedProduct;
+    }
+    return { products: updatedProducts, totalOrder: orders };
   }
 
   return defaultProductState;
@@ -62,7 +83,7 @@ const Provider = (props) => {
   const removeProduct = (id) => {
     dispatchProductAction({
       type: "remove",
-      id: "id",
+      id: id,
     });
   };
 
