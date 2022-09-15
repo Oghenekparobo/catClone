@@ -49,7 +49,7 @@ const Products = (props) => {
   ));
 
   return (
-    <div className="text-center py-12 px-6">
+    <div className="text-center py-12 ">
       <div className=" py-4">
         <h1 className="font-bold text-2xl">FEATURED PRODUCTS</h1>
         <div className="flex justify-center py-4">

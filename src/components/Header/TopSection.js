@@ -2,7 +2,7 @@ import logo from "../../assets/logo.png";
 import CartBadge from "../Cart/CartBadge";
 const TopSection = (props) => {
   return (
-    <div className="flex flex-col text-center py-8 mx-10 space-x-0 md:flex-row md:space-x-96">
+    <div className="flex flex-col w-10/12 text-center py-8 mx-10 space-x-0 md:flex-row justify-around">
       <div className="search-box">
         <button className="flex-items__center  border rounded-full px-6 md:px-0 py-2 w-[18rem]">
           <span className="basis-10/12 text-left pl-2 text-gray-300 hover:cursor-not-allowed">

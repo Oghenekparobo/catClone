@@ -34,7 +34,7 @@ const productReducer = (state, action) => {
     } else {
       updatedProducts = state.products.concat(action.product);
     }
-console.log( updatedProducts);
+
     return { products: updatedProducts, totalOrder: orders };
   }
 
@@ -57,7 +57,6 @@ const Provider = (props) => {
       type: "add",
       product: product,
     });
-   
   };
 
   const removeProduct = (id) => {

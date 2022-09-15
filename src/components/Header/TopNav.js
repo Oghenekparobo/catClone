@@ -1,7 +1,7 @@
 const TopNav = () => {
   return (
     // content on top of the page
-    <div className="top-nav  bg-slate-100 text-center  text-gray-500 text-sm  flex-items__center justify-center  flex-col space-y-2 py-4 md:space-y-0 md:flex-row md:justify-between  md:px-12 md:py-2">
+    <div className="top-nav  bg-slate-100 text-center  text-gray-500 text-sm  flex-items__center justify-center  flex-col space-y-2 py-4 md:space-y-0 md:flex-row md:justify-around md:py-2 ">
       <div className="contact space-y-2 md:space-y-0 md-flex-items__center">
         <p>
           Order On Phone:
@@ -72,7 +72,7 @@ const TopNav = () => {
         </div>
 
         <div className="dot-line hidden md:block"></div>
-        <div className="mx-8 pt-3 md:pt-0 md:mx-0">
+        <div className="mx-8  md:pt-0 md:mx-0">
           <p className="flex-items__center">
             <svg
               xmlns="http://www.w3.org/2000/svg"

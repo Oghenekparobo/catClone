@@ -16,8 +16,8 @@ function Slider() {
           />
           <div className="caption hidden   relative bottom-60 text-red-500 z-50 md:block ">
             <Carousel.Caption>
-              <div className="content">
-                <h3 className="font-bold border-2 border-slate-500 w-[45rem] tracking-widest py-8 px-2 text-6xl ml-44 ">
+              <div className="content flex flex-col justify-center">
+                <h3 className="font-bold border-2 border-slate-500 w-9/12 tracking-widest py-8 px-2 text-6xl md:ml-44 ">
                   ORGANIC STORE
                 </h3>
                 <p className="font-bold capitalize py-2">

@@ -1,6 +1,6 @@
 const CartBadge = (props) => {
   return (
-    <div className="flex flex-col items-center md:flex-row space-x-2">
+    <div className="flex flex-col items-center md:flex-row md:space-x-2">
       <div>
         {/* gotten from codepen<div> */}
         <li className="font-sans block mt-4 lg:inline-block lg:mt-0 lg:ml-6 align-middle text-lime-500 hover:text-gray-700">

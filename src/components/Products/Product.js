@@ -27,7 +27,7 @@ const Product = ({ product, onAddCart }) => {
   };
 
   return (
-    <div className="prod-card border-2 border-opacity-25 p-10 text-center  w-11/12 md:w-5/6 cursor-pointer relative">
+    <div className="prod-card border-2 border-opacity-25  text-center w-3/5 cursor-pointer relative">
       {addProduct && (
         <AddToCartForm removeCart={removeHandler} addProduct={addToCart} />
       )}
@@ -84,7 +84,7 @@ const Product = ({ product, onAddCart }) => {
         <img
           src={product.img}
           alt="product"
-          className="object-cover object-fit h-[12rem]"
+          className="h-1/4"
         />
       </div>
       <div className="prod-card__content bg-gray-100 my-2 py-4 relative">

@@ -11,7 +11,7 @@ const NavMenu = () => {
   };
   return (
     <div className="">
-      <nav className="flex-items__center bg-lime-500 justify-between text-white py-4 px-10">
+      <nav className="flex-items__center bg-lime-500 justify-around text-white py-4 ">
         <div className="menu">
           {/* mobile hamburger starts here */}
           {/* {open menu} */}
@@ -102,7 +102,7 @@ const NavMenu = () => {
       {/* nav mobile menu */}
       {openMobileMenu && (
         <div className="nav-menu__mobile bg-lime-500 border-t-2  border-white md:border-t-0 md:border-none py-4 md:py-0">
-          <ul className="flex flex-col md:hidden text-left text-white divide- ">
+          <ul className="flex flex-col md:hidden text-left text-white divide-y ">
             <li>
               <button className="uppercase py-4 px-10">home</button>
             </li>
