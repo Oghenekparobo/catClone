@@ -19,9 +19,9 @@ function App() {
         <Products />
       </div>
       <div className="features-sections">
-      <Features/>
+        <Features />
       </div>
-   
+     
     </Provider>
   );
 }
