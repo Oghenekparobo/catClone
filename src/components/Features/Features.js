@@ -2,7 +2,7 @@ import grass from "../../assets/grass.png";
 const Features = () => {
   return (
     <section>
-      <div className=" py-8 text-center bg-fuchsia-100 mx-2">
+      <div className=" py-8 px-4 text-center bg-fuchsia-100 mx-2">
         <h1 className="font-bold text-2xl pt-10">WHY  CHOOSE US</h1>
         <div className="flex flex-col justify-center items-center space-y-4 py-4">
           <img src={grass} alt="grass" width="35" />
