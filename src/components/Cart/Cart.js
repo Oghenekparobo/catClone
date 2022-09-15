@@ -9,7 +9,7 @@ const Cart = (props) => {
 
   return (
     <ViewCart removeCart={props.removeCart}>
-      <div className="text-center scroll-smooth overflow-auto">
+      <div className="text-center  ">
         <div className="flex justify-between border-b-2 border-opacity-25 p-4">
           <h1 className="text-xl font-bold">View Cart</h1>
           <svg
