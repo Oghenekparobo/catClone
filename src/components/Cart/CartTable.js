@@ -67,7 +67,7 @@ const CartTable = (props) => {
         ))}
     
       </table>
-      <div className="sum-table-area scroll-smooth w-3/5 p-6">
+      <div className="sum-table-area scroll-smooth p-6 w-4/5 md:w-3/5 ">
         <div className="cart-table-area  md:p-0">
           <table>
             <thead>
