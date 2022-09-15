@@ -1,6 +1,6 @@
 const ProductForm = (props) => {
   return (
-    <div className="prod-icons__rounded">
+    <div className="prod-icons__rounded z-50">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

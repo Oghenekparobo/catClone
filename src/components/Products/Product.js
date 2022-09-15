@@ -27,12 +27,12 @@ const Product = ({ product, onAddCart }) => {
   };
 
   return (
-    <div className="prod-card border-2 border-opacity-25  text-center w-3/5 cursor-pointer relative">
+    <div className="prod-card p-4 shadow-sm relative left-[18%] border-2 border-opacity-25  text-center w-3/5 cursor-pointer">
       {addProduct && (
         <AddToCartForm removeCart={removeHandler} addProduct={addToCart} />
       )}
       {/* show on mouse hover */}
-      <div className="absolute inset-0 bg-gradient-to-b  from-slate-100 to-slate-100 bg-blend-darken  opacity-70 flex justify-center items-start">
+      <div className="absolute inset-0 bg-gray-100 opacity-50 flex justify-center items-start">
         <div className="pt-14 space-x-2  flex">
           <div className="prod-icons__rounded">
             <svg
@@ -99,11 +99,11 @@ const Product = ({ product, onAddCart }) => {
 
         {/* show on mouse hover */}
 
-        <div className="absolute inset-0 bg-lime-500 p-4 text-left">
+        <div className="absolute inset-0 bg-lime-500 p-2 text-left">
           <h3 className="description border-b-2 border-b-white font-bold text-white pb-2">
             It contains
           </h3>
-          <p className="text-sm text-white py-2">{product.description}</p>
+          <p className="text-sm max-w-sm text-white">{product.description}</p>
         </div>
       </div>
     </div>
